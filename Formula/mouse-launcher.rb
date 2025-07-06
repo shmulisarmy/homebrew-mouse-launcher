@@ -5,7 +5,7 @@ class MouseLauncher < Formula
   
   if OS.mac?
     url "https://github.com/shmulisarmy/homebrew-mouse-launcher/releases/download/v1.0.1/mouse_launcher_darwin_universal"
-    sha256 "PLACEHOLDER_SHA256" # Will be updated after release is created
+    sha256 "c77864cb1fec686e7e3a9aa60aebd1d123c8a7f03207e2a93f9cc018ded0ff14"
   end
 
   def install
