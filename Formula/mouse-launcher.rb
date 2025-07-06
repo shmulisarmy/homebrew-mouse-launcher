@@ -4,13 +4,13 @@ class MouseLauncher < Formula
   version "1.0.1"
   
   if OS.mac?
-    url "https://github.com/shmulisarmy/mouse-launcher/releases/download/v1.0.1/mouse_launcher_darwin_arm64"
-    sha256 "c77864cb1fec686e7e3a9aa60aebd1d123c8a7f03207e2a93f9cc018ded0ff14"
+    url "https://github.com/shmulisarmy/mouse-launcher/releases/download/v1.0.1/mouse_launcher_darwin_universal"
+    sha256 "PLACEHOLDER_SHA256" # Will be updated after release is created
   end
 
   def install
     if OS.mac?
-      bin.install "mouse_launcher_darwin_arm64" => "mouse_launcher"
+      bin.install "mouse_launcher_darwin_universal" => "mouse_launcher"
     end
   end
 
