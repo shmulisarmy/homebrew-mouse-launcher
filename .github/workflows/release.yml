@@ -17,16 +17,29 @@ jobs:
         with:
           go-version: '1.24'
 
-      - name: Build for macOS
+      - name: Build for ARM64
         run: |
           go mod download
+          GOOS=darwin GOARCH=arm64 go build -o mouse_launcher_darwin_arm64 main.go
+          chmod +x mouse_launcher_darwin_arm64
+
+      - name: Build for AMD64
+        run: |
           GOOS=darwin GOARCH=amd64 go build -o mouse_launcher_darwin_amd64 main.go
           chmod +x mouse_launcher_darwin_amd64
+
+      - name: Create universal binary
+        run: |
+          lipo -create -output mouse_launcher_darwin_universal mouse_launcher_darwin_amd64 mouse_launcher_darwin_arm64
+          chmod +x mouse_launcher_darwin_universal
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: mouse_launcher_darwin_amd64
+          files: |
+            mouse_launcher_darwin_arm64
+            mouse_launcher_darwin_amd64
+            mouse_launcher_darwin_universal
           draft: false
           prerelease: false
         env:
