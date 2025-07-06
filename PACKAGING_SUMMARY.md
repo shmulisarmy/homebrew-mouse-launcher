@@ -29,7 +29,7 @@ I've prepared your `mouse_launcher` project for Homebrew installation. Here's wh
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/mouse-launcher.git
+   git remote add origin https://github.com/shmulisarmy/mouse-launcher.git
    git push -u origin main
    ```
 
@@ -67,7 +67,7 @@ I've prepared your `mouse_launcher` project for Homebrew installation. Here's wh
 
 Once completed, users will be able to install your tool with:
 ```bash
-brew install YOUR_USERNAME/mouse-launcher/mouse-launcher
+brew install shmulisarmy/mouse-launcher/mouse-launcher
 ```
 
 ### 🔍 Important Notes

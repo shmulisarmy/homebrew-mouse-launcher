@@ -18,7 +18,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/mouse-launcher.git
+git remote add origin https://github.com/shmulisarmy/mouse-launcher.git
 git push -u origin main
 ```
 
@@ -35,11 +35,11 @@ git push -u origin main
 ```ruby
 class MouseLauncher < Formula
   desc "A simple mouse movement utility for macOS using arrow keys"
-  homepage "https://github.com/YOUR_USERNAME/mouse-launcher"
+  homepage "https://github.com/shmulisarmy/mouse-launcher"
   version "1.0.0"
   
   if OS.mac?
-    url "https://github.com/YOUR_USERNAME/mouse-launcher/releases/download/v1.0.0/mouse_launcher_darwin_amd64"
+    url "https://github.com/shmulisarmy/mouse-launcher/releases/download/v1.0.0/mouse_launcher_darwin_amd64"
     sha256 "PLACEHOLDER_SHA256" # This will need to be updated after release
   end
 
@@ -73,7 +73,7 @@ end
 1. After the release is created, download the binary and calculate its SHA256:
 
 ```bash
-curl -L https://github.com/YOUR_USERNAME/mouse-launcher/releases/download/v1.0.0/mouse_launcher_darwin_amd64 -o mouse_launcher_darwin_amd64
+curl -L https://github.com/shmulisarmy/mouse-launcher/releases/download/v1.0.0/mouse_launcher_darwin_amd64 -o mouse_launcher_darwin_amd64
 shasum -a 256 mouse_launcher_darwin_amd64
 ```
 
@@ -84,7 +84,7 @@ shasum -a 256 mouse_launcher_darwin_amd64
 1. Add your tap to Homebrew:
 
 ```bash
-brew tap YOUR_USERNAME/mouse-launcher
+brew tap shmulisarmy/mouse-launcher
 ```
 
 2. Install the formula:
@@ -104,7 +104,7 @@ mouse_launcher --version
 Once everything is working, you can make both repositories public so anyone can install your tool with:
 
 ```bash
-brew install YOUR_USERNAME/mouse-launcher/mouse-launcher
+brew install shmulisarmy/mouse-launcher/mouse-launcher
 ```
 
 ## Troubleshooting
