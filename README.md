@@ -14,7 +14,7 @@ A simple mouse movement utility for macOS that allows you to control mouse movem
 ### Using Homebrew (Recommended)
 
 ```bash
-brew install shmuliklein/mouse-launcher/mouse-launcher
+brew install shmulisarmy/mouse-launcher/mouse-launcher
 ```
 
 ### Manual Installation
@@ -44,3 +44,4 @@ go build -o mouse_launcher main.go
 ## License
 
 MIT License # mouse-launcher
+# homebrew-mouse-launcher
